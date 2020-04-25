@@ -1,10 +1,13 @@
 const _ = {
+//.clamp() Method
   
   clamp(number,lower,upper){
   var lowerClampedValue = Math.max(number, lower);
     var clampedValue = Math.min(lowerClampedValue, upper);
     return clampedValue;
   },
+
+//.inRange() Method  
   
   inRange(number,start,end){
     if(end === undefined){
@@ -18,12 +21,16 @@ const _ = {
     var isInRange = start <= number && number < end 
       return isInRange
     },
+    
+// .words() Method  
   
   words(string){
     const words = string.split(' ');
     return words;
     },
   
+// .pad() Method
+
   pad(string, length){
     if(string.length >= length){
       return string; 
@@ -34,13 +41,17 @@ const _ = {
     return paddedString;
   },
 
+//.has() Method 
+
     has(object , key){
       const hasValue = object[key];
         if(hasValue != undefined){
           return true;
         }return false;
   },
- // {} specifies an empty object  
+  
+ //.invert() Method  
+    
     invert(object){
       let invertedObject = {};
       for (let key in object){
@@ -50,6 +61,8 @@ const _ = {
       return invertedObject;
     },        
 
+//.find() Method
+    
     findKey(object , predicate){
       for(let key in object){
         let value = object[key];
