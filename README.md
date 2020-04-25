@@ -1,4 +1,4 @@
 # lodash-codecademy
 re-creating Lodash Library
 
-An attempt to re-create lodash library through different methods 
+Various methods added to library for personal reference and use. 
